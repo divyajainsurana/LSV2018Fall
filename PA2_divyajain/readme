@@ -1,0 +1,25 @@
+
+file name - priosat.cpp
+
+Compilation steps:
+
+Step 1: read blif file
+Step 2: use command priosat k 3
+
+k here denotes number of minterms to be printed on screen
+
+Approach:
+
+First we read the network then we convert the circuit into cnf form by using command cnf_DeriveSimple. 
+
+
+Then we declare the sat variable and solve the SAT problem. 
+The outcome is stored in variable satResult. 
+
+If satResult is true then we get it as sat and if it is false then we get it as unsat else undefined. 
+
+After this a exhaustive search(Brute force algorithm) is made to see every minterm like 000, 001, 010......,111 to check whether it is onset or offset.
+
+After obtaining minterms , now we apply Quine-McCluskey Algorithm to find prime implicants.
+
+
