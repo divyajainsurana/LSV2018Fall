@@ -1,0 +1,18 @@
+
+Instructions:
+
+Place folder containing init.cpp file in src directory
+
+Use make command to build abc
+
+Now use following commands:
+
+1. ./abc
+
+2. read blif file
+
+3. strash
+
+4. lsv_xai( This command will invoke the code to find hidden xor gates )
+
+ 
